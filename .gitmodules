@@ -268,3 +268,6 @@
 [submodule "lib/module/christie-wd4-7"]
 	path = lib/module/christie-wd4-7
 	url = https://github.com/alpha-io/companion-module-christie-wd47.git
+[submodule "companion-module-christie-wd47"]
+	path = companion-module-christie-wd47
+	url = https://github.com/alpha-io/companion-module-christie-wd47.git
