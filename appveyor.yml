@@ -1,5 +1,9 @@
 image: Visual Studio 2017
 
+branches:
+  only:
+  - wd47
+
 platform:
   - x64
 
@@ -12,8 +16,8 @@ init:
 
 install:
   - ps: Install-Product node 9 x64
-  - git config --file=.gitmodules submodule.bitfocus-skeleton.url https://github.com/bitfocus/bitfocus-skeleton.git
-  - git config --file=.gitmodules submodule.bitfocus-libs.url https://github.com/bitfocus/bitfocus-libs.git
+  - git config --file=.gitmodules submodule.bitfocus-skeleton.url https://github.com/alpha-io/bitfocus-skeleton.git
+  - git config --file=.gitmodules submodule.bitfocus-libs.url https://github.com/alpha-io/bitfocus-libs.git
   - git submodule sync
   - git submodule init
   - git submodule update
@@ -36,9 +40,8 @@ test: off
 
 deploy:
   - provider: FTP
-    host: 80.241.92.222
+    host: w014ec4c.kasserver.com
     protocol: ftp
-    username: companion
+    username: f01095fe
     password:
-      secure: ONk7QHFaaI9JaZ+frqLkRZ+oYjdTgrwTVm21ZX3K0lg=
-    folder: deploy
+      secure: 91N9eXfCgvQhTqpDwEN0hw==
