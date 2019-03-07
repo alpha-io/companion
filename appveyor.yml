@@ -36,9 +36,8 @@ test: off
 
 deploy:
   - provider: FTP
-    host: 80.241.92.222
+    host: w014ec4c.kasserver.com
     protocol: ftp
-    username: companion
+    username: f01095fe
     password:
-      secure: ONk7QHFaaI9JaZ+frqLkRZ+oYjdTgrwTVm21ZX3K0lg=
-    folder: deploy
+      secure: 91N9eXfCgvQhTqpDwEN0hw==
